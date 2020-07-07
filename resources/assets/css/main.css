@@ -782,7 +782,7 @@ h6 {
   -webkit-border-radius:3px;
   border-radius:3px;
   margin:0;
-  padding:18px;
+  padding:18px 68px 18px 18px;
   border:none;
   text-align:left;
   position:relative;
@@ -812,10 +812,10 @@ i{vertical-align:middle;}
 
 
 .message-box .circle-icon {
-    margin-left: 15px;
-    display: inline-block;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    line-height: 51px;
 }
 
 

@@ -20,7 +20,7 @@
 <body>
 
     <div class="notification-bar active">
-    <div class="message-box success">Your message goes here!<a href="#">Find more</a><div class="circle-icon"><i class="material-icons">close</i></div></div>
+    <div class="message-box success">Pages: <a href="/">Home</a> <a href="/product">Product</a> <a href="/elements">Elements</a><div class="circle-icon"><i class="material-icons">close</i></div></div>
     </div>
 
     @include('parts.header')

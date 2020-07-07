@@ -8,16 +8,16 @@
   </div>
   <div class="row">
     <div class="col-12 col-md-3">
-      <div class="message-box">Your message goes here!<a href="#">Find more</a><div class="icon"><i class="material-icons">library_add</i></div></div>
+      <div class="message-box">Your message goes here!<a href="#">Find more</a><div class="circle-icon"><i class="material-icons">library_add</i></div></div>
     </div>
     <div class="col-12 col-md-3">
-      <div class="message-box success">Your message goes here!<a href="#">Find more</a><div class="icon"><i class="material-icons">library_add</i></div></div>
+      <div class="message-box success">Your message goes here!<a href="#">Find more</a><div class="circle-icon"><i class="material-icons">library_add</i></div></div>
     </div>
     <div class="col-12 col-md-3">
-      <div class="message-box warning">Your message goes here!<a href="#">Find more</a><div class="icon"><i class="material-icons">library_add</i></div></div>
+      <div class="message-box warning">Your message goes here!<a href="#">Find more</a><div class="circle-icon"><i class="material-icons">library_add</i></div></div>
     </div>
     <div class="col-12 col-md-3">
-      <div class="message-box error">Your message goes here!<a href="#">Find more</a><div class="icon"><i class="material-icons">library_add</i></div></div>
+      <div class="message-box error">Your message goes here!<a href="#">Find more</a><div class="circle-icon"><i class="material-icons">library_add</i></div></div>
     </div>
   </div>
 
