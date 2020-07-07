@@ -15,26 +15,69 @@ body {
   z-index: 999;
   transition: 0.2s;
 }
+
 .header .header-promo {
   display: inline-block;
   max-width: 150px;
   height: 40px;
   margin: 20px 0;
+  margin-right: 25px;
   overflow: hidden;
   vertical-align: middle;
 }
 .header .header-promo img {
   max-height: 40px;
   width: auto;
+  opacity: 0.8;
 }
+.header .header-search {
+    float: right;
+    line-height: 81px;
+    margin-right: 5px;
+}
+.header .header-search i {
+    background-color: transparent;
+}
+.header .header-wishlist {
+    float: right;
+    line-height: 81px;
+    margin-right: 15px;
+}
+.header .header-wishlist i {
+    background-color: transparent;
+}
+.header .header-cart {
+    float: right;
+    line-height: 81px;
+}
+.header .header-cart .price {
+font-weight: bold;
+text-transform: uppercase;
+display: inline-block;
+font-size: 14px;
+margin-right: 10px;
+text-decoration: none;
+color: #000;
+}
+.header .header-cart i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+.header .header-cart i:after {
+    height: 50px;
+    width: 50px;
+    margin-left: -34px;
+}
+
+
 .header .header-navigation {
-  margin-left: 25px;
   vertical-align: middle;
   display: inline-block;
 }
 .header .header-navigation > ul > li {
   display: inline-block;
-  padding: 20px;
+  padding: 20px 10px;
 }
 .header .header-navigation > ul > li > a {
   display: block;
@@ -44,6 +87,24 @@ body {
   padding: 10px;
   line-height: 20px;
 }
+.header .header-navigation > ul > li:first-child {
+    padding: 20px 0;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 15px;
+    background-color: white;
+}
+.header .header-navigation > ul > li:first-child > a {
+    border: 0;
+    line-height: 39px;
+    height: 39px;
+    background-color: #e7d8d6;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
 .header .header-navigation > ul > li.active > a {
   border-bottom: 1px solid #b4b4b4;
 }
@@ -51,7 +112,6 @@ body {
   overflow-y: scroll;
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s;
   position: fixed;
   max-width: 1375px;
   min-height: 300px;
@@ -68,12 +128,17 @@ body {
   box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 }
 
+
+
+
+
 .header .navigation-item h2 {
   margin: 0;
 }
 
 .header-navigation > ul > li:hover .navigation-item {
   visibility: visible;
+  transition: 0.1s;
   opacity: 1;
 }
 
@@ -575,6 +640,11 @@ h6 {
   width: 100%;
 }
 @media (max-width: 768px) {
+
+    .header .header-navigation {
+        display: none;
+    }
+
   .page-title {
     font-size: 32px;
     line-height: 40px;
@@ -712,7 +782,7 @@ h6 {
   -webkit-border-radius:3px;
   border-radius:3px;
   margin:0;
-  padding:18px 60px 18px 18px;
+  padding:18px;
   border:none;
   text-align:left;
   position:relative;
@@ -733,12 +803,20 @@ h6 {
 .message-box.error {
   background: #f9dedf;
 }
-  .message-box i:after,.message-box i:after,.message-box .close i:after{content:"";height:40px;width:40px;-webkit-border-radius:100%;border-radius:100%;position:absolute;top:-webkit-calc(50% - 20px);top:calc(50% - 20px);left:-webkit-calc(50% - 20px);left:calc(50% - 20px);-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);background-color:rgba(0, 0, 0, 0.06);}
-  .message-box i:hover:after,.message-box i:hover:after,.message-box .close i:hover:after{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;-o-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;}
-  .message-box i:active:after,.message-box i:active:after,.message-box .close i:active:after{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);background-color:rgba(0, 0, 0, 0.16);-webkit-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;-o-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;}
-  .message-box .close i{color:inherit;height:40px;width:40px;line-height:40px;text-align:center;background:rgba(0, 0, 0, 0.05);position:absolute;-webkit-border-radius:50%;border-radius:50%;top:-webkit-calc(50% - 20px);top:calc(50% - 20px);right:12px;cursor:pointer;font-size:18px;}
-  i{vertical-align:middle;}
 
+.circle-icon i:after{content:"";height:40px;width:40px;-webkit-border-radius:100%;border-radius:100%;position:absolute;margin-top:0px;margin-left:-29px;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);background-color:rgba(0, 0, 0, 0.06);}
+.circle-icon i:hover:after{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;-o-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;}
+.circle-icon i{color:inherit;height:40px;width:40px;line-height:40px;text-align:center;background:rgba(0, 0, 0, 0.05);-webkit-border-radius:50%;border-radius:50%;cursor:pointer;font-size:18px;}
+.circle-icon i:active:after{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3);background-color:rgba(0, 0, 0, 0.16);-webkit-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;-o-transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;transition:all cubic-bezier(0.4, 0, 0.2, 1) 0.25s;}
+i{vertical-align:middle;}
+
+
+.message-box .circle-icon {
+    margin-left: 15px;
+    display: inline-block;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
 
 
 
@@ -829,7 +907,6 @@ h6 {
 #detail .product-images {
   width: 100%;
   margin: 0 auto;
-  padding: 15px;
 }
 #detail .product-images li, #detail .product-images figure, #detail .product-images a, #detail .product-images img {
   display: block;
@@ -855,7 +932,7 @@ h6 {
 #detail .product-images .thumb-nav li img {
   display: block;
   width: 100%;
-  max-width: 100px;
+  max-width: 150px;
   margin: 0 auto;
   border: 2px solid transparent;
   -webkit-transition: border-color .25s;
@@ -869,3 +946,24 @@ h6 {
 #detail .product-images .thumb-nav li.slick-current img {
   border-color: #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

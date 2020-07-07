@@ -18,9 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return view('index');
+    return View::make('pages/index');
 });
 
 Route::get('/product', function () {
-    return view('product/index');
+    return View::make('pages/product');
+});
+
+Route::get('/elements', function () {
+    return View::make('pages/elements');
 });
