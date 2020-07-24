@@ -27,13 +27,8 @@
 
     <div class="spacer" style="height: 80px;"></div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                @yield('container')
-            </div>
-        </div>
-    </div>
+
+    @yield('container')
 
     @include('parts.footer')
 

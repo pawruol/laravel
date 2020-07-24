@@ -967,3 +967,11 @@ i{vertical-align:middle;}
 
 
 
+.section-brand-item {
+    text-align: center;
+}
+
+.section-brand-item img {
+    max-width: 150px;
+    margin: 15px auto;
+}
